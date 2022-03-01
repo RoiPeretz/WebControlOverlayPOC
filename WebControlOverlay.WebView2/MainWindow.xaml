@@ -1,0 +1,14 @@
+﻿<Window x:Class="WebControlOverlay.WebView2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:local="clr-namespace:WebControlOverlay.WebView2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="OverlayButton" Background="Pink" Width="50" Height="50" Click="OverlayButton_OnClick" Grid.ZIndex="3"></Button>
+        <wv2:WebView2 x:Name="webView" Source="https://www.google.co.il" Grid.ZIndex="2"/>
+    </Grid>
+</Window>
